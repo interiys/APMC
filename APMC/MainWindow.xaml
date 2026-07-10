@@ -1,0 +1,53 @@
+﻿<Window x:Class="APMC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APMC"
+        mc:Ignorable="d"
+        Title="DiaryApp" Height="450" Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <!-- header -->
+        <Grid Background="LightGray" Grid.Row="0" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Логотип или графический элемент -->
+            <Rectangle Width="120" 
+           Height="60" 
+           Margin="15"
+           VerticalAlignment="Center" 
+           HorizontalAlignment="Left" 
+           Grid.Column="0">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="C:\Users\Денис\source\repos\APMC\image\imgg.jpeg" 
+                    Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <!-- Заголовок -->
+            <Label Content="ООО «БАЗИС-НН» " VerticalAlignment="Center" Height="Auto" Width="Auto"
+                   FontFamily="Yeseva One" FontSize="32" FontWeight="Bold" Grid.Column="1"/>
+
+            <Button x:Name="BTGoBack" Content="Назад" Click="ButtonGoBack_Click" Grid.Column="2" 
+                    HorizontalAlignment="Left" Margin="245,23,0,31" Width="75"/>
+        </Grid>
+
+        <!-- body -->
+        <Frame x:Name="MainFrame" Source="Pages/Authorization.xaml" Grid.Row="1" 
+               NavigationUIVisibility="Hidden" Navigated="FrameOnNavigated"/>
+
+        <!-- footer -->
+        <Rectangle Fill="LightGray" Grid.Row="2"/>
+    </Grid>
+</Window>

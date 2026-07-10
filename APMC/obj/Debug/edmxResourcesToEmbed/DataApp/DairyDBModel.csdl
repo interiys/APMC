@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dairyqModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__UserRole__3B75D760" FromRole="Roles" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserRole" Type="Int32" Nullable="false" />
+    <Property Name="UserStatus" Type="Int32" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Patronymic" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="UserLogin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Role" Relationship="Self.FK__Users__UserRole__3B75D760" FromRole="User" ToRole="Roles" />
+    <NavigationProperty Name="UserStatus1" Relationship="Self.FK__Users__UserStatu__3C69FB99" FromRole="User" ToRole="UserStatuses" />
+    <Property Name="IsShiftActive" Type="Boolean" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <NavigationProperty Name="Department" Relationship="dairyqModel.FK_User_Department" FromRole="User" ToRole="Department" />
+  </EntityType>
+  <EntityType Name="UserStatus">
+    <Key>
+      <PropertyRef Name="UserStatusID" />
+    </Key>
+    <Property Name="UserStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserStatusName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__UserStatu__3C69FB99" FromRole="UserStatuses" ToRole="User" />
+  </EntityType>
+  <Association Name="FK__Users__UserRole__3B75D760">
+    <End Role="Roles" Type="Self.Role" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__UserStatu__3C69FB99">
+    <End Role="UserStatuses" Type="Self.UserStatus" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserStatuses">
+        <PropertyRef Name="UserStatusID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dairyqEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserStatuses" EntityType="Self.UserStatus" />
+    <AssociationSet Name="FK__Users__UserRole__3B75D760" Association="Self.FK__Users__UserRole__3B75D760">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__UserStatu__3C69FB99" Association="Self.FK__Users__UserStatu__3C69FB99">
+      <End Role="UserStatuses" EntitySet="UserStatuses" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <EntitySet Name="Typesses" EntityType="dairyqModel.Typess" />
+    <EntitySet Name="UnitOfMeasures" EntityType="dairyqModel.UnitOfMeasure" />
+    <EntitySet Name="FasTables" EntityType="dairyqModel.FasTable" />
+    <AssociationSet Name="FK__FasTable__TypeID__6E01572D" Association="dairyqModel.FK__FasTable__TypeID__6E01572D">
+      <End Role="Typess" EntitySet="Typesses" />
+      <End Role="FasTable" EntitySet="FasTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FasTable__UnitOf__6D0D32F4" Association="dairyqModel.FK__FasTable__UnitOf__6D0D32F4">
+      <End Role="UnitOfMeasure" EntitySet="UnitOfMeasures" />
+      <End Role="FasTable" EntitySet="FasTables" />
+    </AssociationSet>
+    <EntitySet Name="ButterTables" EntityType="dairyqModel.ButterTable" />
+    <AssociationSet Name="FK__ButterTab__TypeI__778AC167" Association="dairyqModel.FK__ButterTab__TypeI__778AC167">
+      <End Role="Typess" EntitySet="Typesses" />
+      <End Role="ButterTable" EntitySet="ButterTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ButterTab__UnitO__76969D2E" Association="dairyqModel.FK__ButterTab__UnitO__76969D2E">
+      <End Role="UnitOfMeasure" EntitySet="UnitOfMeasures" />
+      <End Role="ButterTable" EntitySet="ButterTables" />
+    </AssociationSet>
+    <EntitySet Name="Departments" EntityType="dairyqModel.Department" />
+    <AssociationSet Name="FK__ButterTab__Depar__04E4BC85" Association="dairyqModel.FK__ButterTab__Depar__04E4BC85">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="ButterTable" EntitySet="ButterTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FasTable__Depart__09A971A2" Association="dairyqModel.FK__FasTable__Depart__09A971A2">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="FasTable" EntitySet="FasTables" />
+    </AssociationSet>
+    <EntitySet Name="Statuses" EntityType="dairyqModel.Status" />
+    <AssociationSet Name="FK__ButterTab__Statu__3864608B" Association="dairyqModel.FK__ButterTab__Statu__3864608B">
+      <End Role="Status" EntitySet="Statuses" />
+      <End Role="ButterTable" EntitySet="ButterTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FasTable__Status__3E1D39E1" Association="dairyqModel.FK__FasTable__Status__3E1D39E1">
+      <End Role="Status" EntitySet="Statuses" />
+      <End Role="FasTable" EntitySet="FasTables" />
+    </AssociationSet>
+    <EntitySet Name="UserLogs" EntityType="dairyqModel.UserLog" />
+    <AssociationSet Name="FK_User_Department" Association="dairyqModel.FK_User_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Typess">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="FasTables" Relationship="dairyqModel.FK__FasTable__TypeID__6E01572D" FromRole="Typess" ToRole="FasTable" />
+    <NavigationProperty Name="ButterTables" Relationship="dairyqModel.FK__ButterTab__TypeI__778AC167" FromRole="Typess" ToRole="ButterTable" />
+  </EntityType>
+  <EntityType Name="UnitOfMeasure">
+    <Key>
+      <PropertyRef Name="UnitOfMeasuresID" />
+    </Key>
+    <Property Name="UnitOfMeasuresID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitOfMeasures" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="FasTables" Relationship="dairyqModel.FK__FasTable__UnitOf__6D0D32F4" FromRole="UnitOfMeasure" ToRole="FasTable" />
+    <NavigationProperty Name="ButterTables" Relationship="dairyqModel.FK__ButterTab__UnitO__76969D2E" FromRole="UnitOfMeasure" ToRole="ButterTable" />
+  </EntityType>
+  <EntityType Name="FasTable">
+    <Key>
+      <PropertyRef Name="FasID" />
+    </Key>
+    <Property Name="FasID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitOfMeasuresID" Type="Int32" Nullable="false" />
+    <Property Name="TypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Typess" Relationship="dairyqModel.FK__FasTable__TypeID__6E01572D" FromRole="FasTable" ToRole="Typess" />
+    <NavigationProperty Name="UnitOfMeasure" Relationship="dairyqModel.FK__FasTable__UnitOf__6D0D32F4" FromRole="FasTable" ToRole="UnitOfMeasure" />
+    <Property Name="Quantity" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="dairyqModel.FK__FasTable__Depart__09A971A2" FromRole="FasTable" ToRole="Department" />
+    <Property Name="DateProduction" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StatuseID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Status" Relationship="dairyqModel.FK__FasTable__Status__3E1D39E1" FromRole="FasTable" ToRole="Status" />
+  </EntityType>
+  <Association Name="FK__FasTable__TypeID__6E01572D">
+    <End Type="dairyqModel.Typess" Role="Typess" Multiplicity="1" />
+    <End Type="dairyqModel.FasTable" Role="FasTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Typess">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="FasTable">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FasTable__UnitOf__6D0D32F4">
+    <End Type="dairyqModel.UnitOfMeasure" Role="UnitOfMeasure" Multiplicity="1" />
+    <End Type="dairyqModel.FasTable" Role="FasTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitOfMeasure">
+        <PropertyRef Name="UnitOfMeasuresID" />
+      </Principal>
+      <Dependent Role="FasTable">
+        <PropertyRef Name="UnitOfMeasuresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ButterTable">
+    <Key>
+      <PropertyRef Name="ButterID" />
+    </Key>
+    <Property Name="ButterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitOfMeasuresID" Type="Int32" Nullable="false" />
+    <Property Name="TypeID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Typess" Relationship="dairyqModel.FK__ButterTab__TypeI__778AC167" FromRole="ButterTable" ToRole="Typess" />
+    <NavigationProperty Name="UnitOfMeasure" Relationship="dairyqModel.FK__ButterTab__UnitO__76969D2E" FromRole="ButterTable" ToRole="UnitOfMeasure" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="dairyqModel.FK__ButterTab__Depar__04E4BC85" FromRole="ButterTable" ToRole="Department" />
+    <Property Name="DateProduction" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StatuseID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Status" Relationship="dairyqModel.FK__ButterTab__Statu__3864608B" FromRole="ButterTable" ToRole="Status" />
+  </EntityType>
+  <Association Name="FK__ButterTab__TypeI__778AC167">
+    <End Type="dairyqModel.Typess" Role="Typess" Multiplicity="1" />
+    <End Type="dairyqModel.ButterTable" Role="ButterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Typess">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="ButterTable">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ButterTab__UnitO__76969D2E">
+    <End Type="dairyqModel.UnitOfMeasure" Role="UnitOfMeasure" Multiplicity="1" />
+    <End Type="dairyqModel.ButterTable" Role="ButterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitOfMeasure">
+        <PropertyRef Name="UnitOfMeasuresID" />
+      </Principal>
+      <Dependent Role="ButterTable">
+        <PropertyRef Name="UnitOfMeasuresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ButterTables" Relationship="dairyqModel.FK__ButterTab__Depar__04E4BC85" FromRole="Department" ToRole="ButterTable" />
+    <NavigationProperty Name="FasTables" Relationship="dairyqModel.FK__FasTable__Depart__09A971A2" FromRole="Department" ToRole="FasTable" />
+    <NavigationProperty Name="Users" Relationship="dairyqModel.FK_User_Department" FromRole="Department" ToRole="User" />
+  </EntityType>
+  <Association Name="FK__ButterTab__Depar__04E4BC85">
+    <End Type="dairyqModel.Department" Role="Department" Multiplicity="1" />
+    <End Type="dairyqModel.ButterTable" Role="ButterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="ButterTable">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FasTable__Depart__09A971A2">
+    <End Type="dairyqModel.Department" Role="Department" Multiplicity="1" />
+    <End Type="dairyqModel.FasTable" Role="FasTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="FasTable">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatuseID" />
+    </Key>
+    <Property Name="StatuseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatuseName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ButterTables" Relationship="dairyqModel.FK__ButterTab__Statu__3864608B" FromRole="Status" ToRole="ButterTable" />
+    <NavigationProperty Name="FasTables" Relationship="dairyqModel.FK__FasTable__Status__3E1D39E1" FromRole="Status" ToRole="FasTable" />
+  </EntityType>
+  <Association Name="FK__ButterTab__Statu__3864608B">
+    <End Type="dairyqModel.Status" Role="Status" Multiplicity="1" />
+    <End Type="dairyqModel.ButterTable" Role="ButterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatuseID" />
+      </Principal>
+      <Dependent Role="ButterTable">
+        <PropertyRef Name="StatuseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FasTable__Status__3E1D39E1">
+    <End Type="dairyqModel.Status" Role="Status" Multiplicity="1" />
+    <End Type="dairyqModel.FasTable" Role="FasTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatuseID" />
+      </Principal>
+      <Dependent Role="FasTable">
+        <PropertyRef Name="StatuseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="UserLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ActionType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ActionDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TableName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="RecordID" Type="Int32" />
+    <Property Name="ActionTime" Type="DateTime" Precision="3" />
+    <Property Name="UserlogID" Type="Int32" Nullable="false" />
+    <Property Name="Ip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_User_Department">
+    <End Type="dairyqModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="dairyqModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

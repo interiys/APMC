@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище dairyqModelContainer" CdmEntityContainer="dairyqEntities">
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="dairyqModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="dairyqModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="IsShiftActive" ColumnName="IsShiftActive" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="UserLogin" ColumnName="UserLogin" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserStatuses">
+      <EntityTypeMapping TypeName="dairyqModel.UserStatus">
+        <MappingFragment StoreEntitySet="UserStatuses">
+          <ScalarProperty Name="UserStatusID" ColumnName="UserStatusID" />
+          <ScalarProperty Name="UserStatusName" ColumnName="UserStatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Typesses">
+      <EntityTypeMapping TypeName="dairyqModel.Typess">
+        <MappingFragment StoreEntitySet="Typess">
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitOfMeasures">
+      <EntityTypeMapping TypeName="dairyqModel.UnitOfMeasure">
+        <MappingFragment StoreEntitySet="UnitOfMeasures">
+          <ScalarProperty Name="UnitOfMeasures" ColumnName="UnitOfMeasures" />
+          <ScalarProperty Name="UnitOfMeasuresID" ColumnName="UnitOfMeasuresID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FasTables">
+      <EntityTypeMapping TypeName="dairyqModel.FasTable">
+        <MappingFragment StoreEntitySet="FasTable">
+          <ScalarProperty Name="StatuseID" ColumnName="StatuseID" />
+          <ScalarProperty Name="DateProduction" ColumnName="DateProduction" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UnitOfMeasuresID" ColumnName="UnitOfMeasuresID" />
+          <ScalarProperty Name="FasID" ColumnName="FasID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ButterTables">
+      <EntityTypeMapping TypeName="dairyqModel.ButterTable">
+        <MappingFragment StoreEntitySet="ButterTable">
+          <ScalarProperty Name="StatuseID" ColumnName="StatuseID" />
+          <ScalarProperty Name="DateProduction" ColumnName="DateProduction" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UnitOfMeasuresID" ColumnName="UnitOfMeasuresID" />
+          <ScalarProperty Name="ButterID" ColumnName="ButterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="dairyqModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statuses">
+      <EntityTypeMapping TypeName="dairyqModel.Status">
+        <MappingFragment StoreEntitySet="Statuses">
+          <ScalarProperty Name="StatuseName" ColumnName="StatuseName" />
+          <ScalarProperty Name="StatuseID" ColumnName="StatuseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserLogs">
+      <EntityTypeMapping TypeName="dairyqModel.UserLog">
+        <MappingFragment StoreEntitySet="UserLogs">
+          <ScalarProperty Name="Ip" ColumnName="Ip" />
+          <ScalarProperty Name="UserlogID" ColumnName="UserlogID" />
+          <ScalarProperty Name="ActionTime" ColumnName="ActionTime" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ActionDescription" ColumnName="ActionDescription" />
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

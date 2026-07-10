@@ -1,0 +1,280 @@
+﻿<Page x:Class="APMC.Pages.AddEditFas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:APMC.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="Добавление/Редактирование - Масло"
+      Background="#F5F5F5">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <Border Grid.Row="0" 
+                Background="#2196F3" 
+                Padding="20"
+                Height="80">
+            <TextBlock Text="Добавление/Редактирование записи (Фасовка)" 
+                      FontSize="24" 
+                      FontWeight="Bold" 
+                      Foreground="White"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Border>
+
+        <!-- Основной контент -->
+        <Border Grid.Row="1" 
+                Margin="20,20,20,45"
+                Background="White"
+                CornerRadius="10"
+                Padding="30"
+                Effect="{StaticResource ShadowMedium}" Grid.RowSpan="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Единица измерения -->
+                <Label Grid.Row="0" Grid.Column="0"
+                       Content="Единица измерения:"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#333333"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,20,0"/>
+                <ComboBox x:Name="beted" 
+                         Grid.Row="0" Grid.Column="1"
+                         SelectedValue="{Binding UnitOfMeasuresID}"
+                         DisplayMemberPath="UnitOfMeasures"
+                         SelectedValuePath="UnitOfMeasuresID"
+                         Height="40"
+                         FontSize="14"
+                         Padding="10,0,10,0"
+                         BorderBrush="#BDBDBD"
+                         BorderThickness="1"
+                         Background="White"
+                         VerticalContentAlignment="Center">
+                    <ComboBox.Effect>
+                        <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                    </ComboBox.Effect>
+                </ComboBox>
+
+                <!-- Тип -->
+                <Label Grid.Row="2" Grid.Column="0"
+                       Content="Тип:"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#333333"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,20,0"/>
+                <ComboBox x:Name="bettype" 
+                         Grid.Row="2" Grid.Column="1"
+                         SelectedValue="{Binding TypeID}"
+                         DisplayMemberPath="TypeName"
+                         SelectedValuePath="TypeID"
+                         SelectionChanged="BETRole_SelectionChanged"
+                         Height="40"
+                         FontSize="14"
+                         Padding="10,0,10,0"
+                         BorderBrush="#BDBDBD"
+                         BorderThickness="1"
+                         Background="White"
+                         VerticalContentAlignment="Center">
+                    <ComboBox.Effect>
+                        <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                    </ComboBox.Effect>
+                </ComboBox>
+
+                <!-- Цех -->
+                <Label Grid.Row="4" Grid.Column="0"
+                       Content="Цех:"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#333333"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,20,0"/>
+                <ComboBox x:Name="betdep" 
+                         Grid.Row="4" Grid.Column="1"
+                         SelectedValue="{Binding DepartmentID}"
+                         DisplayMemberPath="DepartmentName"
+                         SelectedValuePath="DepartmentID"
+                         SelectionChanged="BETRole_SelectionChanged"
+                         Height="40"
+                         FontSize="14"
+                         Padding="10,0,10,0"
+                         BorderBrush="#BDBDBD"
+                         BorderThickness="1"
+                         Background="White"
+                         VerticalContentAlignment="Center">
+                    <ComboBox.Effect>
+                        <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                    </ComboBox.Effect>
+                </ComboBox>
+
+                <!-- Количество -->
+                <Label Grid.Row="6" Grid.Column="0"
+                       Content="Количество:"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#333333"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,20,0"/>
+                <TextBox x:Name="betquantity" 
+                        Grid.Row="6" Grid.Column="1"
+                        Text="{Binding Quantity}"
+                        LostFocus="TB_LostFocus"
+                        Height="40"
+                        FontSize="14"
+                        Padding="10"
+                        BorderBrush="#BDBDBD"
+                        BorderThickness="1"
+                        Background="White"
+                        VerticalContentAlignment="Center"
+                        Cursor="IBeam">
+                    <TextBox.Effect>
+                        <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                    </TextBox.Effect>
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" Value="#2196F3"/>
+                                </Trigger>
+                                <Trigger Property="IsFocused" Value="True">
+                                    <Setter Property="BorderBrush" Value="#2196F3"/>
+                                    <Setter Property="BorderThickness" Value="2"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+
+                <!-- Дата производства -->
+                <Label Grid.Row="8" Grid.Column="0"
+                       Content="Дата производства:"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#333333"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,20,0"/>
+                <TextBox x:Name="betdate" 
+                        Grid.Row="8" Grid.Column="1"
+                        Text="{Binding DateProduction}"
+                        LostFocus="TB_LostFocus"
+                        Height="40"
+                        FontSize="14"
+                        Padding="10"
+                        BorderBrush="#BDBDBD"
+                        BorderThickness="1"
+                        Background="White"
+                        VerticalContentAlignment="Center"
+                        Cursor="IBeam">
+                    <TextBox.Effect>
+                        <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                    </TextBox.Effect>
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" Value="#2196F3"/>
+                                </Trigger>
+                                <Trigger Property="IsFocused" Value="True">
+                                    <Setter Property="BorderBrush" Value="#2196F3"/>
+                                    <Setter Property="BorderThickness" Value="2"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+
+                <!-- Статус -->
+                <Label Grid.Row="10" Grid.Column="0"
+                       Content="Статус:"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#333333"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,20,0"/>
+                <ComboBox x:Name="betstatus" 
+                         Grid.Row="10" Grid.Column="1"
+                         SelectedValue="{Binding StatuseID}"
+                         DisplayMemberPath="StatuseName"
+                         SelectedValuePath="StatuseID"
+                         SelectionChanged="BETRole_SelectionChanged"
+                         Height="40"
+                         FontSize="14"
+                         Padding="10,0,10,0"
+                         BorderBrush="#BDBDBD"
+                         BorderThickness="1"
+                         Background="White"
+                         VerticalContentAlignment="Center">
+                    <ComboBox.Effect>
+                        <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                    </ComboBox.Effect>
+                </ComboBox>
+            </Grid>
+        </Border>
+
+        <!-- Нижняя панель с кнопками -->
+        <Border Grid.Row="2" 
+               Background="#E8EAF6" 
+               Padding="20"
+               Height="90" Margin="0,10,0,-10">
+            <StackPanel Orientation="Horizontal" 
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center">
+                <Button x:Name="BtnSave" 
+                       Content="Сохранить" 
+                       Click="ButtonOKAddEdit_Click"
+                       Width="180" Height="50"
+                       FontSize="16"
+                       Background="#4CAF50"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       Cursor="Hand">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#45a049"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

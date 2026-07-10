@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище dairyqModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ButterTable">
+    <Key>
+      <PropertyRef Name="ButterID" />
+    </Key>
+    <Property Name="ButterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UnitOfMeasuresID" Type="int" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="DateProduction" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Quantity" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="StatuseID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepartmentName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FasTable">
+    <Key>
+      <PropertyRef Name="FasID" />
+    </Key>
+    <Property Name="FasID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UnitOfMeasuresID" Type="int" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="DateProduction" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Quantity" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="StatuseID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Statuses">
+    <Key>
+      <PropertyRef Name="StatuseID" />
+    </Key>
+    <Property Name="StatuseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatuseName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Typess">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UnitOfMeasures">
+    <Key>
+      <PropertyRef Name="UnitOfMeasuresID" />
+    </Key>
+    <Property Name="UnitOfMeasuresID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UnitOfMeasures" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserRole" Type="int" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Patronymic" Type="nvarchar" MaxLength="255" />
+    <Property Name="UserLogin" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="IsShiftActive" Type="bit" />
+    <Property Name="DepartmentID" Type="int" />
+  </EntityType>
+  <EntityType Name="UserLogs">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserlogID" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ActionType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ActionDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="TableName" Type="nvarchar" MaxLength="100" />
+    <Property Name="RecordID" Type="int" />
+    <Property Name="ActionTime" Type="datetime" />
+    <Property Name="Ip" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserStatuses">
+    <Key>
+      <PropertyRef Name="UserStatusID" />
+    </Key>
+    <Property Name="UserStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserStatusName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__ButterTab__Depar__37703C52">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="ButterTable" Type="Self.ButterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="ButterTable">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ButterTab__Statu__3864608B">
+    <End Role="Statuses" Type="Self.Statuses" Multiplicity="1" />
+    <End Role="ButterTable" Type="Self.ButterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statuses">
+        <PropertyRef Name="StatuseID" />
+      </Principal>
+      <Dependent Role="ButterTable">
+        <PropertyRef Name="StatuseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ButterTab__TypeI__367C1819">
+    <End Role="Typess" Type="Self.Typess" Multiplicity="1" />
+    <End Role="ButterTable" Type="Self.ButterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Typess">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="ButterTable">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ButterTab__UnitO__3587F3E0">
+    <End Role="UnitOfMeasures" Type="Self.UnitOfMeasures" Multiplicity="1" />
+    <End Role="ButterTable" Type="Self.ButterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitOfMeasures">
+        <PropertyRef Name="UnitOfMeasuresID" />
+      </Principal>
+      <Dependent Role="ButterTable">
+        <PropertyRef Name="UnitOfMeasuresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FasTable__Depart__3D2915A8">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="FasTable" Type="Self.FasTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="FasTable">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FasTable__Status__3E1D39E1">
+    <End Role="Statuses" Type="Self.Statuses" Multiplicity="1" />
+    <End Role="FasTable" Type="Self.FasTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statuses">
+        <PropertyRef Name="StatuseID" />
+      </Principal>
+      <Dependent Role="FasTable">
+        <PropertyRef Name="StatuseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FasTable__TypeID__3C34F16F">
+    <End Role="Typess" Type="Self.Typess" Multiplicity="1" />
+    <End Role="FasTable" Type="Self.FasTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Typess">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="FasTable">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FasTable__UnitOf__3B40CD36">
+    <End Role="UnitOfMeasures" Type="Self.UnitOfMeasures" Multiplicity="1" />
+    <End Role="FasTable" Type="Self.FasTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnitOfMeasures">
+        <PropertyRef Name="UnitOfMeasuresID" />
+      </Principal>
+      <Dependent Role="FasTable">
+        <PropertyRef Name="UnitOfMeasuresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Department">
+    <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище dairyqModelContainer">
+    <EntitySet Name="ButterTable" EntityType="Self.ButterTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FasTable" EntityType="Self.FasTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Statuses" EntityType="Self.Statuses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Typess" EntityType="Self.Typess" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnitOfMeasures" EntityType="Self.UnitOfMeasures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserLogs" EntityType="Self.UserLogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserStatuses" EntityType="Self.UserStatuses" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__ButterTab__Depar__37703C52" Association="Self.FK__ButterTab__Depar__37703C52">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="ButterTable" EntitySet="ButterTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ButterTab__Statu__3864608B" Association="Self.FK__ButterTab__Statu__3864608B">
+      <End Role="Statuses" EntitySet="Statuses" />
+      <End Role="ButterTable" EntitySet="ButterTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ButterTab__TypeI__367C1819" Association="Self.FK__ButterTab__TypeI__367C1819">
+      <End Role="Typess" EntitySet="Typess" />
+      <End Role="ButterTable" EntitySet="ButterTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ButterTab__UnitO__3587F3E0" Association="Self.FK__ButterTab__UnitO__3587F3E0">
+      <End Role="UnitOfMeasures" EntitySet="UnitOfMeasures" />
+      <End Role="ButterTable" EntitySet="ButterTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FasTable__Depart__3D2915A8" Association="Self.FK__FasTable__Depart__3D2915A8">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="FasTable" EntitySet="FasTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FasTable__Status__3E1D39E1" Association="Self.FK__FasTable__Status__3E1D39E1">
+      <End Role="Statuses" EntitySet="Statuses" />
+      <End Role="FasTable" EntitySet="FasTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FasTable__TypeID__3C34F16F" Association="Self.FK__FasTable__TypeID__3C34F16F">
+      <End Role="Typess" EntitySet="Typess" />
+      <End Role="FasTable" EntitySet="FasTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FasTable__UnitOf__3B40CD36" Association="Self.FK__FasTable__UnitOf__3B40CD36">
+      <End Role="UnitOfMeasures" EntitySet="UnitOfMeasures" />
+      <End Role="FasTable" EntitySet="FasTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Department" Association="Self.FK_User_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

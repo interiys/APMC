@@ -1,0 +1,387 @@
+﻿<Page x:Class="APMC.Pages.AddEditSTR"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:APMC.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="550" d:DesignWidth="900"
+      Title="Добавление/Редактирование записи"
+      Background="#F5F5F5">
+
+    <Grid Margin="0,0,0,-98">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <Border Grid.Row="0" 
+                Background="#2196F3" 
+                Padding="20"
+                Height="80">
+            <TextBlock Text="Добавление/Редактирование записи" 
+                      FontSize="24" 
+                      FontWeight="Bold" 
+                      Foreground="White"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
+        </Border>
+
+        <!-- Основной контент -->
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Левая панель - Фасовка -->
+            <Border Grid.Column="0" 
+                   Background="White"
+                   CornerRadius="10"
+                   Padding="20"
+                   Effect="{StaticResource ShadowMedium}" Margin="0,0,0,-52">
+                <StackPanel Margin="0,0,0,-48">
+                    <TextBlock x:Name="fasovka" Text="Фасовка"
+                              FontSize="18"
+                              FontWeight="Bold"
+                              Foreground="#2196F3"
+                              Margin="0,0,0,15"
+                              HorizontalAlignment="Center"/>
+
+                    <!-- Единица измерения -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="fsed1" 
+                               Content="Единица измерения:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <ComboBox x:Name="fsed" 
+                                 SelectedValue="{Binding UnitOfMeasures}"
+                                 DisplayMemberPath="UnitOfMeasures"
+                                 SelectedValuePath="UnitOfMeasuresID"
+                                 Height="35"
+                                 FontSize="14"
+                                 Padding="10,0,10,0"
+                                 BorderBrush="#E0E0E0"
+                                 BorderThickness="1"
+                                 Background="White">
+                            <ComboBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </ComboBox.Effect>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Тип -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="fstype1" 
+                               Content="Тип:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <ComboBox x:Name="fstype" 
+                                 SelectedValue="{Binding TypeID}"
+                                 DisplayMemberPath="TypeName"
+                                 SelectedValuePath="TypeID"
+                                 SelectionChanged="AccountingRole_SelectionChanged"
+                                 Height="35"
+                                 FontSize="14"
+                                 Padding="10,0,10,0"
+                                 BorderBrush="#E0E0E0"
+                                 BorderThickness="1"
+                                 Background="White">
+                            <ComboBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </ComboBox.Effect>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Цех -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="fsdep1" 
+                               Content="Цех:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <ComboBox x:Name="fsdep" 
+                                 SelectedValue="{Binding DepartmentID}"
+                                 DisplayMemberPath="DepartmentName"
+                                 SelectedValuePath="DepartmentID"
+                                 SelectionChanged="AccountingRole_SelectionChanged"
+                                 Height="35"
+                                 FontSize="14"
+                                 Padding="10,0,10,0"
+                                 BorderBrush="#E0E0E0"
+                                 BorderThickness="1"
+                                 Background="White">
+                            <ComboBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </ComboBox.Effect>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Количество -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="fsquantity1" 
+                               Content="Количество:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <TextBox x:Name="fsquantity" 
+                                Text="{Binding Quantity}"
+                                LostFocus="TB_LostFocus"
+                                Height="45"
+                                FontSize="14"
+                                Padding="10"
+                                BorderBrush="#E0E0E0"
+                                BorderThickness="1"
+                                Background="White">
+                            <TextBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </TextBox.Effect>
+                        </TextBox>
+                    </StackPanel>
+
+                    <!-- Дата производства -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="fsdate1" 
+                               Content="Дата производства:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <TextBox x:Name="fsdate" 
+                                Text="{Binding DateProdaction}"
+                                LostFocus="TB_LostFocus"
+                                Height="45"
+                                FontSize="14"
+                                Padding="10"
+                                BorderBrush="#E0E0E0"
+                                BorderThickness="1"
+                                Background="White">
+                            <TextBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </TextBox.Effect>
+                        </TextBox>
+                    </StackPanel>
+
+                    <!-- Статус -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="fsstatus1" 
+                               Content="Статус:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <ComboBox x:Name="fsstatus" 
+                                 SelectedValue="{Binding StatuseID}"
+                                 DisplayMemberPath="StatuseName"
+                                 SelectedValuePath="StatuseID"
+                                 SelectionChanged="AccountingRole_SelectionChanged"
+                                 Height="35"
+                                 FontSize="14"
+                                 Padding="10,0,10,0"
+                                 BorderBrush="#E0E0E0"
+                                 BorderThickness="1"
+                                 Background="White">
+                            <ComboBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </ComboBox.Effect>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Правая панель - Масло -->
+            <Border Grid.Column="2" 
+                   Background="White"
+                   CornerRadius="10"
+                   Padding="20"
+                   Effect="{StaticResource ShadowMedium}" Margin="0,0,0,-52">
+                <StackPanel Margin="0,0,0,-36">
+                    <TextBlock x:Name="maslo" Text="Масло"
+                              FontSize="18"
+                              FontWeight="Bold"
+                              Foreground="#2196F3"
+                              Margin="0,0,0,15"
+                              HorizontalAlignment="Center"/>
+
+                    <!-- Единица измерения -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="beted1" 
+                               Content="Единица измерения:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <ComboBox x:Name="beted" 
+                                 SelectedValue="{Binding UnitOfMeasures}"
+                                 DisplayMemberPath="UnitOfMeasures"
+                                 SelectedValuePath="UnitOfMeasuresID"
+                                 Height="35"
+                                 FontSize="14"
+                                 Padding="10,0,10,0"
+                                 BorderBrush="#E0E0E0"
+                                 BorderThickness="1"
+                                 Background="White">
+                            <ComboBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </ComboBox.Effect>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Тип -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="bettype1" 
+                               Content="Тип:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <ComboBox x:Name="bettype" 
+                                 SelectedValue="{Binding TypeID}"
+                                 DisplayMemberPath="TypeName"
+                                 SelectedValuePath="TypeID"
+                                 SelectionChanged="AccountingRole_SelectionChanged"
+                                 Height="35"
+                                 FontSize="14"
+                                 Padding="10,0,10,0"
+                                 BorderBrush="#E0E0E0"
+                                 BorderThickness="1"
+                                 Background="White">
+                            <ComboBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </ComboBox.Effect>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Цех -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="betdep1" 
+                               Content="Цех:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <ComboBox x:Name="betdep" 
+                                 SelectedValue="{Binding DepartmentID}"
+                                 DisplayMemberPath="DepartmentName"
+                                 SelectedValuePath="DepartmentID"
+                                 SelectionChanged="AccountingRole_SelectionChanged"
+                                 Height="35"
+                                 FontSize="14"
+                                 Padding="10,0,10,0"
+                                 BorderBrush="#E0E0E0"
+                                 BorderThickness="1"
+                                 Background="White">
+                            <ComboBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </ComboBox.Effect>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Количество -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="betquantity1" 
+                               Content="Количество:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <TextBox x:Name="betquantity" 
+                                Text="{Binding Quantity}"
+                                LostFocus="TB_LostFocus"
+                                Height="47"
+                                FontSize="14"
+                                Padding="10"
+                                BorderBrush="#E0E0E0"
+                                BorderThickness="1"
+                                Background="White">
+                            <TextBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </TextBox.Effect>
+                        </TextBox>
+                    </StackPanel>
+
+                    <!-- Дата производства -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="betdate1" 
+                               Content="Дата производства:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <TextBox x:Name="betdate" 
+                                Text="{Binding DateProduction}"
+                                LostFocus="TB_LostFocus"
+                                Height="47"
+                                FontSize="14"
+                                Padding="10"
+                                BorderBrush="#E0E0E0"
+                                BorderThickness="1"
+                                Background="White">
+                            <TextBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </TextBox.Effect>
+                        </TextBox>
+                    </StackPanel>
+
+                    <!-- Статус -->
+                    <StackPanel Margin="0,0,0,10">
+                        <Label x:Name="betstatus1" 
+                               Content="Статус:"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#333333"
+                               Padding="0,0,0,5"/>
+                        <ComboBox x:Name="betstatus" 
+                                 SelectedValue="{Binding StatuseID}"
+                                 DisplayMemberPath="StatuseName"
+                                 SelectedValuePath="StatuseID"
+                                 SelectionChanged="AccountingRole_SelectionChanged"
+                                 Height="35"
+                                 FontSize="14"
+                                 Padding="10,0,10,0"
+                                 BorderBrush="#E0E0E0"
+                                 BorderThickness="1"
+                                 Background="White">
+                            <ComboBox.Effect>
+                                <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.2"/>
+                            </ComboBox.Effect>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- Нижняя панель с кнопками -->
+        <Border Grid.Row="1" 
+               Background="#E8EAF6" 
+               Padding="20" Margin="10,520,-10,-37" Grid.RowSpan="2">
+            <StackPanel Orientation="Horizontal" 
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center">
+                <Button x:Name="BtnSave" 
+                       Content="Сохранить" 
+                       Click="ButtonOKAddEdit_Click"
+                       Width="150" Height="45"
+                       FontSize="16"
+                       Background="#4CAF50"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       Margin="0,0,10,0"
+                       Cursor="Hand">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                    </Button.Effect>
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

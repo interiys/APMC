@@ -1,0 +1,980 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\captchawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\captchawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\captchawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\captchawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|c:\\users\\\u0434\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditusers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\adminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\authorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\authorization.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditstr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditstr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\authorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\authorization.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\dictionary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\dictionary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\smenauser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\smenauser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\strpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\strpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\strpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\strpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\betpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\betpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\betpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\betpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\faspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\faspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\faspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\faspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\smenauser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\smenauser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\logspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\logspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\logspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\logspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\faschecksmen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\faschecksmen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\faschecksmen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\faschecksmen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\adminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\accountingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\accountingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\accountingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\accountingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditstr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditstr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditbet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditbet.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditbet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditbet.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditfas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditfas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditfas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditfas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditaccounting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditaccounting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\captcharesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\captcharesource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditusers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditusers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\connectobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\connectobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\pages\\addeditaccounting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:pages\\addeditaccounting.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\helpers\\simpledblogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:helpers\\simpledblogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\frameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\frameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\dairydbmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\dairydbmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|egorchik||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\dairydbmodel.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\dairydbmodel.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\obj\\Debug\\Pages\\STRPage.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\Pages\\STRPage.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\userlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\AppData\\Local\\Temp\\.vsdbgsrc\\b733fdf706600cc7fc32c7a6e5f0cce17fd252184dbf3388aaff510bf77cbc9b\\BindingExpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\buttertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\buttertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\fastable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\fastable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\dairydbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\dairydbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\dairydbmodel.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\dairydbmodel.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\dairydbmodel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\dairydbmodel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\dairydbmodel.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\dairydbmodel.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\dataapp\\dairydbmodel.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:dataapp\\dairydbmodel.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\obj\\Debug\\Pages\\LogsPage.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\Pages\\LogsPage.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3D536967-000F-4943-9BA0-BD05F0BE60F4}|egorchik.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BetPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\BetPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\BetPage.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\BetPage.xaml.cs",
+              "RelativeToolTip": "Pages\\BetPage.xaml.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwHQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T14:55:52.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminPage.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AdminPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\AdminPage.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AdminPage.xaml",
+              "RelativeToolTip": "Pages\\AdminPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-11T20:19:35.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddEditUsers.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditUsers.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEditUsers.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditUsers.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEditUsers.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T20:23:29.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "STRPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\STRPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\STRPage.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\STRPage.xaml.cs",
+              "RelativeToolTip": "Pages\\STRPage.xaml.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAmwK0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T03:39:06.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LogsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\LogsPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\LogsPage.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\LogsPage.xaml",
+              "RelativeToolTip": "Pages\\LogsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-31T03:08:05.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LogsPage.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\LogsPage.cs",
+              "RelativeDocumentMoniker": "Pages\\LogsPage.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\LogsPage.cs",
+              "RelativeToolTip": "Pages\\LogsPage.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAYwN4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T03:08:19.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CaptchaWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\CaptchaWindow.xaml",
+              "RelativeDocumentMoniker": "Pages\\CaptchaWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\CaptchaWindow.xaml",
+              "RelativeToolTip": "Pages\\CaptchaWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-11T20:15:42.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CaptchaWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\CaptchaWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\CaptchaWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\CaptchaWindow.xaml.cs",
+              "RelativeToolTip": "Pages\\CaptchaWindow.xaml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T20:18:15.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Authorization.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\Authorization.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\Authorization.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\Authorization.xaml.cs",
+              "RelativeToolTip": "Pages\\Authorization.xaml.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAUwG4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T17:08:58.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Authorization.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\Authorization.xaml",
+              "RelativeDocumentMoniker": "Pages\\Authorization.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\Authorization.xaml",
+              "RelativeToolTip": "Pages\\Authorization.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-11T17:07:28.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dictionary.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\Dictionary.xaml",
+              "RelativeDocumentMoniker": "DataApp\\Dictionary.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\Dictionary.xaml",
+              "RelativeToolTip": "DataApp\\Dictionary.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-11T14:50:10.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "FrameObject.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\FrameObject.cs",
+              "RelativeDocumentMoniker": "DataApp\\FrameObject.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\FrameObject.cs",
+              "RelativeToolTip": "DataApp\\FrameObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T15:35:04.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T11:35:21.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ButterTable.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\ButterTable.cs",
+              "RelativeDocumentMoniker": "DataApp\\ButterTable.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\ButterTable.cs",
+              "RelativeToolTip": "DataApp\\ButterTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:08:32.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "FasTable.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\FasTable.cs",
+              "RelativeDocumentMoniker": "DataApp\\FasTable.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\FasTable.cs",
+              "RelativeToolTip": "DataApp\\FasTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:09:09.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\Department.cs",
+              "RelativeDocumentMoniker": "DataApp\\Department.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\Department.cs",
+              "RelativeToolTip": "DataApp\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T23:05:44.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddEditBet.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditBet.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEditBet.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditBet.xaml",
+              "RelativeToolTip": "Pages\\AddEditBet.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T15:00:11.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FasCheckSmen.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\FasCheckSmen.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FasCheckSmen.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\FasCheckSmen.xaml.cs",
+              "RelativeToolTip": "Pages\\FasCheckSmen.xaml.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAYwK0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:55:02.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FasCheckSmen.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\FasCheckSmen.xaml",
+              "RelativeDocumentMoniker": "Pages\\FasCheckSmen.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\FasCheckSmen.xaml",
+              "RelativeToolTip": "Pages\\FasCheckSmen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T03:49:35.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AdminPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AdminPage.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AdminPage.xaml.cs",
+              "RelativeToolTip": "Pages\\AdminPage.xaml.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAkwL8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:48:14.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BetPage.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\BetPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\BetPage.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\BetPage.xaml",
+              "RelativeToolTip": "Pages\\BetPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T14:54:53.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FasPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\FasPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\FasPage.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\FasPage.xaml.cs",
+              "RelativeToolTip": "Pages\\FasPage.xaml.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwGsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T20:25:10.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddEditSTR.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditSTR.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEditSTR.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditSTR.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEditSTR.xaml.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAuwB4BAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T03:56:29.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "STRPage.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\STRPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\STRPage.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\STRPage.xaml",
+              "RelativeToolTip": "Pages\\STRPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T03:39:00.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AddEditUsers.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditUsers.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEditUsers.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditUsers.xaml",
+              "RelativeToolTip": "Pages\\AddEditUsers.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-11T20:22:21.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\Session.cs",
+              "RelativeDocumentMoniker": "DataApp\\Session.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\Session.cs",
+              "RelativeToolTip": "DataApp\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T15:35:32.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ConnectObject.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\ConnectObject.cs",
+              "RelativeDocumentMoniker": "DataApp\\ConnectObject.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\ConnectObject.cs",
+              "RelativeToolTip": "DataApp\\ConnectObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T15:25:45.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-11T14:51:03.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AddEditAccounting.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditAccounting.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEditAccounting.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditAccounting.xaml",
+              "RelativeToolTip": "Pages\\AddEditAccounting.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T19:35:05.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SmenaUser.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\SmenaUser.xaml",
+              "RelativeDocumentMoniker": "Pages\\SmenaUser.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\SmenaUser.xaml",
+              "RelativeToolTip": "Pages\\SmenaUser.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T04:05:46.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FasPage.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\FasPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\FasPage.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\FasPage.xaml",
+              "RelativeToolTip": "Pages\\FasPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-11T20:23:27.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SmenaUser.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\SmenaUser.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\SmenaUser.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\SmenaUser.xaml.cs",
+              "RelativeToolTip": "Pages\\SmenaUser.xaml.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAwHkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T04:10:20.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccountingPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AccountingPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AccountingPage.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AccountingPage.xaml.cs",
+              "RelativeToolTip": "Pages\\AccountingPage.xaml.cs",
+              "ViewState": "AgIAAFQBAAAAAAAAAAAkwIgBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T19:35:37.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AccountingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AccountingPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\AccountingPage.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AccountingPage.xaml",
+              "RelativeToolTip": "Pages\\AccountingPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T19:35:27.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddEditSTR.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditSTR.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEditSTR.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditSTR.xaml",
+              "RelativeToolTip": "Pages\\AddEditSTR.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T03:56:10.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AddEditBet.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditBet.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEditBet.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditBet.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEditBet.xaml.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAwJUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T15:00:23.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AddEditFas.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditFas.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEditFas.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditFas.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEditFas.xaml.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwJQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T01:09:25.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AddEditFas.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditFas.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEditFas.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditFas.xaml",
+              "RelativeToolTip": "Pages\\AddEditFas.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-30T01:09:10.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AddEditAccounting.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditAccounting.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEditAccounting.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Pages\\AddEditAccounting.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEditAccounting.xaml.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAkwIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T19:35:40.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CaptchaResource.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\CaptchaResource.cs",
+              "RelativeDocumentMoniker": "DataApp\\CaptchaResource.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\CaptchaResource.cs",
+              "RelativeToolTip": "DataApp\\CaptchaResource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T17:02:45.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-01T04:05:55.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T20:01:20.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T14:48:05.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UserStatus.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\UserStatus.cs",
+              "RelativeDocumentMoniker": "DataApp\\UserStatus.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\UserStatus.cs",
+              "RelativeToolTip": "DataApp\\UserStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:08:56.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SimpleDbLogger.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Helpers\\SimpleDbLogger.cs",
+              "RelativeDocumentMoniker": "Helpers\\SimpleDbLogger.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Helpers\\SimpleDbLogger.cs",
+              "RelativeToolTip": "Helpers\\SimpleDbLogger.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAMwB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:27:55.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\User.cs",
+              "RelativeDocumentMoniker": "DataApp\\User.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\User.cs",
+              "RelativeToolTip": "DataApp\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:27:16.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DairyDBModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.edmx",
+              "RelativeDocumentMoniker": "DataApp\\DairyDBModel.edmx",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.edmx [Diagram1]",
+              "RelativeToolTip": "DataApp\\DairyDBModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-01-11T21:10:04.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "egorchik",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\egorchik.csproj",
+              "RelativeDocumentMoniker": "egorchik.csproj",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\egorchik.csproj",
+              "RelativeToolTip": "egorchik.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-11T20:03:35.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "DairyDBModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.cs",
+              "RelativeDocumentMoniker": "DataApp\\DairyDBModel.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.cs",
+              "RelativeToolTip": "DataApp\\DairyDBModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T03:08:50.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UserLog.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\UserLog.cs",
+              "RelativeDocumentMoniker": "DataApp\\UserLog.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\UserLog.cs",
+              "RelativeToolTip": "DataApp\\UserLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T05:10:07.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "BindingExpression.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\AppData\\Local\\Temp\\.vsdbgsrc\\b733fdf706600cc7fc32c7a6e5f0cce17fd252184dbf3388aaff510bf77cbc9b\\BindingExpression.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b733fdf706600cc7fc32c7a6e5f0cce17fd252184dbf3388aaff510bf77cbc9b\\BindingExpression.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\AppData\\Local\\Temp\\.vsdbgsrc\\b733fdf706600cc7fc32c7a6e5f0cce17fd252184dbf3388aaff510bf77cbc9b\\BindingExpression.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b733fdf706600cc7fc32c7a6e5f0cce17fd252184dbf3388aaff510bf77cbc9b\\BindingExpression.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAIwBAAAAAAAAAAAqwJQBAABhAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T04:36:08.953Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T02:21:00.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "DairyDBModel.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.Designer.cs",
+              "RelativeDocumentMoniker": "DataApp\\DairyDBModel.Designer.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.Designer.cs",
+              "RelativeToolTip": "DataApp\\DairyDBModel.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:27:06.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DairyDBModel.Context.tt",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.Context.tt",
+              "RelativeDocumentMoniker": "DataApp\\DairyDBModel.Context.tt",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.Context.tt",
+              "RelativeToolTip": "DataApp\\DairyDBModel.Context.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-31T02:27:07.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "DairyDBModel.Context.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.Context.cs",
+              "RelativeDocumentMoniker": "DataApp\\DairyDBModel.Context.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.Context.cs",
+              "RelativeToolTip": "DataApp\\DairyDBModel.Context.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T02:40:16.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "STRPage.g.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\obj\\Debug\\Pages\\STRPage.g.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\Pages\\STRPage.g.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\obj\\Debug\\Pages\\STRPage.g.cs",
+              "RelativeToolTip": "obj\\Debug\\Pages\\STRPage.g.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAD4v0kAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T05:34:17.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DairyDBModel.tt",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.tt",
+              "RelativeDocumentMoniker": "DataApp\\DairyDBModel.tt",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.tt",
+              "RelativeToolTip": "DataApp\\DairyDBModel.tt",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-30T00:12:45.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "DairyDBModel.edmx.diagram",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.edmx.diagram",
+              "RelativeDocumentMoniker": "DataApp\\DairyDBModel.edmx.diagram",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\DairyDBModel.edmx.diagram",
+              "RelativeToolTip": "DataApp\\DairyDBModel.edmx.diagram",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-31T02:27:05.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\Role.cs",
+              "RelativeDocumentMoniker": "DataApp\\Role.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\DataApp\\Role.cs",
+              "RelativeToolTip": "DataApp\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T23:05:38.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "LogsPage.g.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\obj\\Debug\\Pages\\LogsPage.g.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\Pages\\LogsPage.g.cs",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\obj\\Debug\\Pages\\LogsPage.g.cs",
+              "RelativeToolTip": "obj\\Debug\\Pages\\LogsPage.g.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwDEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T03:30:45.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\\u0414\u0435\u043D\u0438\u0441\\source\\repos\\egorchik\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAADdAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-11T14:51:02.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

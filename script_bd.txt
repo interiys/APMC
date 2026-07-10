@@ -1,0 +1,119 @@
+-- Создание базы данных
+CREATE DATABASE dairyq;
+GO
+
+USE dairyq;
+GO
+
+-- Создание таблицы Department
+CREATE TABLE dbo.Department (
+    DepartmentID INT IDENTITY(1,1) PRIMARY KEY,
+    DepartmentName NVARCHAR(255) NOT NULL
+);
+GO
+
+-- Создание таблицы UnitOfMeasures
+CREATE TABLE dbo.UnitOfMeasures (
+    UnitOfMeasuresID INT IDENTITY(1,1) PRIMARY KEY,
+    UnitOfMeasures NVARCHAR(255) NOT NULL
+);
+GO
+
+-- Создание таблицы Types
+CREATE TABLE dbo.Types (
+    TypeID INT IDENTITY(1,1) PRIMARY KEY,
+    TypeName NVARCHAR(255) NOT NULL
+);
+GO
+
+-- Создание таблицы Statuses
+CREATE TABLE dbo.Statuses (
+    StatusID INT IDENTITY(1,1) PRIMARY KEY,
+    StatusName NVARCHAR(255) NOT NULL
+);
+GO
+
+-- Создание таблицы Roles
+CREATE TABLE dbo.Roles (
+    RoleID INT IDENTITY(1,1) PRIMARY KEY,
+    RoleName NVARCHAR(255) NOT NULL
+);
+GO
+
+-- Создание таблицы UserStatuses
+CREATE TABLE dbo.UserStatuses (
+    UserStatusID INT IDENTITY(1,1) PRIMARY KEY,
+    UserStatusName NVARCHAR(255) NOT NULL
+);
+GO
+
+-- Создание таблицы User
+CREATE TABLE dbo.[User] (
+    UserID INT IDENTITY(1,1) PRIMARY KEY,
+    UserRole INT NOT NULL,
+    UserStatus INT NOT NULL,
+    LastName NVARCHAR(255) NOT NULL,
+    FirstName NVARCHAR(255) NOT NULL,
+    Patronymic NVARCHAR(255) NULL,
+    UserLogin NVARCHAR(255) NOT NULL,
+    UserPassword NVARCHAR(255) NOT NULL,
+    IsShiftActive BIT NULL,
+    DepartmentID INT NULL,
+    CONSTRAINT FK_User_Department FOREIGN KEY (DepartmentID) 
+        REFERENCES dbo.Department(DepartmentID)
+);
+GO
+
+-- Создание таблицы ButterTable
+CREATE TABLE dbo.ButterTable (
+    ButterID INT IDENTITY(1,1) PRIMARY KEY,
+    UnitOfMeasuresID INT NOT NULL,
+    TypeID INT NOT NULL,
+    DateProduction NVARCHAR(255) NOT NULL,
+    Quantity NVARCHAR(255) NOT NULL,
+    DepartmentID INT NOT NULL,
+    StatusID INT NOT NULL,
+    CONSTRAINT FK_ButterTab_UnitO_3587F3E0 FOREIGN KEY (UnitOfMeasuresID) 
+        REFERENCES dbo.UnitOfMeasures(UnitOfMeasuresID),
+    CONSTRAINT FK_ButterTab_TypeI_367C1819 FOREIGN KEY (TypeID) 
+        REFERENCES dbo.Types(TypeID),
+    CONSTRAINT FK_ButterTab_Depar_37703C52 FOREIGN KEY (DepartmentID) 
+        REFERENCES dbo.Department(DepartmentID),
+    CONSTRAINT FK_ButterTab_Status_3864608B FOREIGN KEY (StatusID) 
+        REFERENCES dbo.Statuses(StatusID)
+);
+GO
+
+-- Создание таблицы FastTable
+CREATE TABLE dbo.FastTable (
+    FasID INT IDENTITY(1,1) PRIMARY KEY,
+    UnitOfMeasuresID INT NOT NULL,
+    TypeID INT NOT NULL,
+    DateProduction NVARCHAR(255) NOT NULL,
+    Quantity NVARCHAR(255) NOT NULL,
+    DepartmentID INT NOT NULL,
+    StatusID INT NOT NULL,
+    CONSTRAINT FK_FasTable_UnitOf_3B40CD36 FOREIGN KEY (UnitOfMeasuresID) 
+        REFERENCES dbo.UnitOfMeasures(UnitOfMeasuresID),
+    CONSTRAINT FK_FasTable_TypelD_3C34F16F FOREIGN KEY (TypeID) 
+        REFERENCES dbo.Types(TypeID),
+    CONSTRAINT FK_FasTable_Depart_3D2915A8 FOREIGN KEY (DepartmentID) 
+        REFERENCES dbo.Department(DepartmentID),
+    CONSTRAINT FK_FasTable_Status_3E1D39E1 FOREIGN KEY (StatusID) 
+        REFERENCES dbo.Statuses(StatusID)
+);
+GO
+
+-- Создание таблицы UserLogs
+CREATE TABLE dbo.UserLogs (
+    LogID INT IDENTITY(1,1) PRIMARY KEY,
+    UserlogID INT NOT NULL,
+    UserName NVARCHAR(100) NULL,
+    ActionType NVARCHAR(50) NULL,
+    ActionDescription NVARCHAR(500) NULL,
+    TableName NVARCHAR(100) NULL,
+    RecordID INT NULL,
+    ActionTime DATETIME NULL,
+    Ip NVARCHAR(50) NULL
+);
+GO

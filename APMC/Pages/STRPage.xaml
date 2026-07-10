@@ -1,0 +1,390 @@
+﻿<Page x:Class="APMC.Pages.STRPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:APMC.Pages"
+      mc:Ignorable="d"
+      Title="Учет склада готовой продукции"
+      Height="568" Width="907"
+      Background="#F5F5F5"
+      IsVisibleChanged="Window_IsVisibleChanged">
+
+    <Grid Margin="-554,0,0,-164">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <Border Grid.Row="0" 
+                Background="#2196F3" 
+                Padding="20" Margin="372,-157,-333,29">
+            <Grid Margin="-106,-110,0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                          Text="Склад готовой продукции"
+                          FontSize="24" 
+                          FontWeight="Bold" 
+                          Foreground="White"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top" Margin="118,144,0,0" Height="34" Width="340"/>
+
+                <TextBlock x:Name="TBHello" 
+                          Grid.Column="1"
+                          Text=""
+                          FontSize="14" 
+                          Foreground="White"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                          Margin="0,0,10,0"/>
+            </Grid>
+        </Border>
+
+        <!-- Основной контент -->
+        <Grid Grid.Row="1" Margin="372,-24,-333,64">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Левая таблица - Цех овощей -->
+            <Border Grid.Column="0" 
+                   Background="White"
+                   CornerRadius="10"
+                   Padding="10"
+                   Effect="{StaticResource ShadowMedium}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0"
+                              Text="Цех овощей"
+                              FontSize="18"
+                              FontWeight="Bold"
+                              Foreground="#2196F3"
+                              Margin="0,0,0,10"
+                              HorizontalAlignment="Center"/>
+
+                    <ScrollViewer Grid.Row="1" 
+                                 VerticalScrollBarVisibility="Auto"
+                                 HorizontalScrollBarVisibility="Auto">
+                        <DataGrid x:Name="DGridSTRTable"
+                                  SelectionChanged="DGridSTRTables_SelectionChanged"
+                                  SelectionMode="Single" 
+                                  SelectionUnit="FullRow"
+                                  AutoGenerateColumns="False"
+                                  HeadersVisibility="Column"
+                                  BorderBrush="#E0E0E0"
+                                  BorderThickness="1"
+                                  RowBackground="White"
+                                  AlternatingRowBackground="#F8F8F8"
+                                  GridLinesVisibility="Horizontal"
+                                  FontSize="14"
+                                  RowHeight="35" Width="774">
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader">
+                                    <Setter Property="Background" Value="#2196F3"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="SemiBold"/>
+                                    <Setter Property="Padding" Value="10,5"/>
+                                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                </Style>
+                            </DataGrid.Resources>
+
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Дата производства"
+                                                   Binding="{Binding DateProduction}"
+                                                   Width="120"/>
+                                <DataGridTextColumn Header="Цех"
+                                                   Binding="{Binding DepartmentID}"
+                                                   Width="80"/>
+                                <DataGridTextColumn Header="Ед. измерения" 
+                                                   Binding="{Binding UnitOfMeasuresID}"
+                                                   Width="100"/>
+                                <DataGridTextColumn Header="Тип продукции" 
+                                                   Binding="{Binding TypeID}"
+                                                   Width="100"/>
+                                <DataGridTextColumn Header="Количество" 
+                                                   Binding="{Binding Quantity}"
+                                                   Width="90"/>
+                                <DataGridTextColumn Header="Статус" 
+                                                   Binding="{Binding StatuseID}"
+                                                   Width="80"/>
+                                <DataGridTemplateColumn Width="150">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="Редактировать"
+                                                    Click="ButtonEditSTR_Click"
+                                                    Width="140"
+                                                    Height="30"
+                                                    FontSize="12"
+                                                    Background="#FF9800"
+                                                    Foreground="White"
+                                                    FontWeight="SemiBold"
+                                                    BorderThickness="0"
+                                                    Cursor="Hand">
+                                                <Button.Effect>
+                                                    <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.3"/>
+                                                </Button.Effect>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+
+            <!-- Правая таблица - Цех масла -->
+            <Border Grid.Column="2" 
+                   Background="White"
+                   CornerRadius="10"
+                   Padding="10"
+                   Effect="{StaticResource ShadowMedium}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0"
+                              Text="Цех масла"
+                              FontSize="18"
+                              FontWeight="Bold"
+                              Foreground="#2196F3"
+                              Margin="0,0,0,10"
+                              HorizontalAlignment="Center"/>
+
+                    <ScrollViewer Grid.Row="1" 
+                                 VerticalScrollBarVisibility="Auto"
+                                 HorizontalScrollBarVisibility="Auto">
+                        <DataGrid x:Name="DGridSTRTable2"
+                                  SelectionChanged="DGridSTRTables2_SelectionChanged"
+                                  SelectionMode="Single" 
+                                  SelectionUnit="FullRow"
+                                  AutoGenerateColumns="False"
+                                  HeadersVisibility="Column"
+                                  BorderBrush="#E0E0E0"
+                                  BorderThickness="1"
+                                  RowBackground="White"
+                                  AlternatingRowBackground="#F8F8F8"
+                                  GridLinesVisibility="Horizontal"
+                                  FontSize="14"
+                                  RowHeight="35" Height="671" Width="742">
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader">
+                                    <Setter Property="Background" Value="#2196F3"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="SemiBold"/>
+                                    <Setter Property="Padding" Value="10,5"/>
+                                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                </Style>
+                            </DataGrid.Resources>
+
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Дата производства"
+                                                   Binding="{Binding DateProduction}"
+                                                   Width="120"/>
+                                <DataGridTextColumn Header="Цех"
+                                                   Binding="{Binding DepartmentID}"
+                                                   Width="80"/>
+                                <DataGridTextColumn Header="Ед. измерения" 
+                                                   Binding="{Binding UnitOfMeasuresID}"
+                                                   Width="100"/>
+                                <DataGridTextColumn Header="Тип продукции" 
+                                                   Binding="{Binding TypeID}"
+                                                   Width="100"/>
+                                <DataGridTextColumn Header="Количество" 
+                                                   Binding="{Binding Quantity}"
+                                                   Width="90"/>
+                                <DataGridTextColumn Header="Статус" 
+                                                   Binding="{Binding StatuseID}"
+                                                   Width="80"/>
+                                <DataGridTemplateColumn Width="150">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="Редактировать"
+                                                    Click="ButtonEditSTR2_Click"
+                                                    Width="140"
+                                                    Height="30"
+                                                    FontSize="12"
+                                                    Background="#FF9800"
+                                                    Foreground="White"
+                                                    FontWeight="SemiBold"
+                                                    BorderThickness="0"
+                                                    Cursor="Hand">
+                                                <Button.Effect>
+                                                    <DropShadowEffect BlurRadius="3" ShadowDepth="1" Opacity="0.3"/>
+                                                </Button.Effect>
+                                            </Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+
+            <!-- Панель управления -->
+            <Border Grid.Column="3" 
+                   Margin="20,0,0,0"
+                   Background="White"
+                   CornerRadius="10"
+                   Padding="15"
+                   Effect="{StaticResource ShadowMedium}">
+                <StackPanel>
+                    <TextBlock Text="Управление"
+                              FontSize="16"
+                              FontWeight="Bold"
+                              Foreground="#2196F3"
+                              Margin="0,0,0,20"
+                              HorizontalAlignment="Center"/>
+
+                    <Button Content="Добавить1" 
+                           Click="ButtonAddSTR_Click"
+                           Height="40"
+                           FontSize="14"
+                           Background="#4CAF50"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"
+                           Cursor="Hand">
+                        <Button.Effect>
+                            <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <Button Content="Добавить2" 
+                           Click="ButtonAddSTR2_Click"
+                           Height="40"
+                           FontSize="14"
+                           Background="#4CAF50"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"
+                           Cursor="Hand">
+                        <Button.Effect>
+                            <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <Button Content="Смена" 
+                           Click="ButtonSTRCheckSmena_Click"
+                           Height="40"
+                           FontSize="14"
+                           Background="#2196F3"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           Margin="0,0,0,20"
+                           Cursor="Hand">
+                        <Button.Effect>
+                            <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <!-- Статистика -->
+                    <Border Background="#E3F2FD"
+                           CornerRadius="5"
+                           Padding="10"
+                           Margin="0,10,0,0">
+                        <StackPanel>
+                            <TextBlock Text="Статистика"
+                                      FontSize="14"
+                                      FontWeight="Bold"
+                                      Foreground="#1976D2"
+                                      Margin="0,0,0,10"
+                                      HorizontalAlignment="Center"/>
+
+                            <StackPanel Orientation="Horizontal"
+                                       Margin="0,0,0,5">
+                                <TextBlock Text="Овощи:"
+                                          FontSize="12"
+                                          Foreground="#333333"/>
+                                <TextBlock x:Name="TBVegetablesCount"
+                                          Text="0"
+                                          FontSize="12"
+                                          FontWeight="Bold"
+                                          Foreground="#4CAF50"
+                                          Margin="5,0,0,0"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal"
+                                       Margin="0,5,0,0">
+                                <TextBlock Text="Масло:"
+                                          FontSize="12"
+                                          Foreground="#333333"/>
+                                <TextBlock x:Name="TBOilCount"
+                                          Text="0"
+                                          FontSize="12"
+                                          FontWeight="Bold"
+                                          Foreground="#FF9800"
+                                          Margin="5,0,0,0"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal"
+                                       Margin="0,5,0,0">
+                                <TextBlock Text="Всего:"
+                                          FontSize="12"
+                                          Foreground="#333333"/>
+                                <TextBlock x:Name="TBTotalCount"
+                                          Text="0"
+                                          FontSize="12"
+                                          FontWeight="Bold"
+                                          Foreground="#2196F3"
+                                          Margin="5,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- Нижняя панель -->
+        <Border Grid.Row="1" 
+               Background="#E8EAF6" 
+               Padding="15"
+               Height="70" Margin="352,668,-353,-6" Grid.RowSpan="2">
+            <StackPanel Orientation="Horizontal" 
+                       HorizontalAlignment="Right">
+                <Button Content="Выйти" 
+                       Click="ButtonExit_Click"
+                       Width="120" Height="40"
+                       FontSize="14"
+                       Background="#757575"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       Margin="0,0,10,0"
+                       Cursor="Hand">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                    </Button.Effect>
+                </Button>
+
+                <Button Content="Обновить" 
+                       Click="ButtonRefresh_Click"
+                       Width="120" Height="40"
+                       FontSize="14"
+                       Background="#9C27B0"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       Cursor="Hand">
+                    <Button.Effect>
+                        <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                    </Button.Effect>
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
