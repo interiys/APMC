@@ -55,7 +55,7 @@
 
 ### 1. Клонируй репозиторий
 ```bash
-git clone https://github.com/interiys/Diplom-APMC.git
+git clone https://github.com/interiys/APMC.git
 cd Diplom-APMC
 ```
 
