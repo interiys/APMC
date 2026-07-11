@@ -1,12 +1,10 @@
-#Разработка приложения на С#
+# Разработка приложения на С#
 
 [![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![WPF](https://img.shields.io/badge/WPF-5C2D91?logo=.net&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/)
 [![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/en-us/sql-server)
 [![Status](https://img.shields.io/badge/status-graduated-brightgreen.svg)]()
-
-**Разработка dekstop-приложения для предприятия на практику**
 
 ##  Что умеет система
 
