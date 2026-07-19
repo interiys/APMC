@@ -54,7 +54,7 @@
 ### 1. Клонируй репозиторий
 ```bash
 git clone https://github.com/interiys/APMC.git
-cd Diplom-APMC
+cd APMC
 ```
 
 ### 2. Восстанови базу данных
